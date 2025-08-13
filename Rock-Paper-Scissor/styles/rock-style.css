@@ -29,10 +29,12 @@
       .score{
         margin-top: 50px;
       }
-      .reset-score-button{
+      .reset-score-button,
+       .Auto-Play-button{
         background-color: #fff;
         border: none;
         font-size: 15px;
         padding: 7px 20px;
         cursor: pointer;
       }
+      

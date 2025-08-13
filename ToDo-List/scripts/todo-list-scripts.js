@@ -6,21 +6,27 @@ const todolist=[{
 renderToDoList();
 function renderToDoList() {
     let todoListHtml='';
-    for (let index = 0; index < todolist.length; index++) {
-    const todo=todolist[index];
+    todolist.forEach((todo,index)=>{
     const {name}=todo;
     const {dueDate}=todo;
     const html=`<div>${name} </div> 
     <div>${dueDate} </div>
-    <button class="todo-delete-button"; onclick=" 
-    todolist.splice(${index},1);
-    renderToDoList();
-    ">Delete</button></div>`;
+    <button class="todo-delete-button js-delete-btn";>
+    Delete</button></div>`;
     todoListHtml+=html;
-}
+    });
 document.querySelector('.js-todo-list').innerHTML=todoListHtml;
-}
 
+document.querySelectorAll('.js-delete-btn').forEach((deleteButton ,index)=>{
+        deleteButton.addEventListener('click',()=>{
+            todolist.splice(index,1);
+            renderToDoList();
+        })
+});
+}
+document.querySelector('.js-add-btn').addEventListener('click',()=>{
+    addToDo();
+})
 function addToDo() {
     const inputElemnet=document.querySelector(".js-name-input");
     const dateElement=document.querySelector(".js-date");
