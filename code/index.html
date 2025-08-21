@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Coding Platform</title>
+  <style>
+    #editor { height: 300px; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+  <h2>Online Code Runner</h2>
+  <select id="language">
+    <option value="54">C++</option>
+    <option value="71">Python</option>
+    <option value="62">Java</option>
+  </select>
+  <div id="editor"></div>
+  <button onclick="runCode()">Run</button>
+  <pre id="output"></pre>
+
+  <!-- Monaco Editor -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.44.0/min/vs/loader.min.js"></script>
+  <script>
+    require.config({ paths: { 'vs': 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.44.0/min/vs' }});
+    require(["vs/editor/editor.main"], function () {
+      window.editor = monaco.editor.create(document.getElementById('editor'), {
+        value: 'print("Hello World")',
+        language: 'python'
+      });
+    });
+
+    async function runCode() {
+      const code = editor.getValue();
+      const language_id = document.getElementById('language').value;
+
+      document.getElementById('output').textContent = "Running...";
+
+      const response = await fetch("http://localhost:3000/run", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ source_code: code, language_id })
+      });
+
+      const result = await response.json();
+      document.getElementById('output').textContent =
+        (result.output || "") + "\n" + (result.status || "");
+    }
+  </script>
+</body>
+</html>
