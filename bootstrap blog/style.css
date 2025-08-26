@@ -1,0 +1,136 @@
+*{
+   color: white;
+    background-color: black;
+}
+/* @media only screen and (max-width:720px) {
+   .navbar h1 {
+    font-size: 30px;
+    }
+    .content h1 {
+        font-size: 70px;
+    }
+} */
+nav{
+    display: flex;
+    margin-top: 3%;
+    flex-wrap: wrap;
+}
+h1{
+    font-size: 100px;
+}
+ul{
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+li{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-style: normal;
+    padding-left: 50px;
+    padding-right: 50px;
+ 
+}
+a{
+    text-decoration: none;
+}
+li::marker{
+    color:transparent;
+}
+li:hover{
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+.rev{
+   font-size: 196px;
+   display: inline-block;
+}
+
+.searchcontainer
+{
+    display: inline-block;
+  
+    position: relative;
+bottom: 10px;
+    left: 230px;
+    width: 30%;
+   
+   
+}
+#searchbar{
+    padding: 7px;
+    width: 100%;
+    background: transparent;
+    border: none;
+  
+    display: flex;
+ text-align: end;
+ 
+}
+#searchbar:hover
+{
+   border-radius: 10px;
+   border: 1px solid white;
+   display: flex;
+   text-align: start;
+   border-bottom: 1px solid rgb(255, 255, 255);
+    
+}
+#searchbar:active
+{
+   border-radius: 10px;
+   border: 1px solid white;
+   display: flex;
+   text-align: start;
+   border-bottom: 1px solid rgb(255, 255, 255);
+    
+}
+#searchbar::placeholder
+{  
+    
+    color: white;
+    font-size: large;
+    font-weight: bold;
+   
+}
+.card{
+    border: none;
+  justify-content: space-evenly;
+  padding-left: 2%;
+  background-color: black;
+}
+.card-group{
+   padding: 5%;
+   display: flex;
+    
+}
+::selection{
+    background-color: white;
+    color: black;
+}
+
+#previous{
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    color: #000;
+    
+}
+#next{
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    color: #000;
+}
+#pager{
+    margin-left: 40%;
+}
+#previousli{
+    cursor:auto;
+    background-color: transparent;
+}
+#nextli{
+    cursor:auto;
+    background-color: transparent;
+}

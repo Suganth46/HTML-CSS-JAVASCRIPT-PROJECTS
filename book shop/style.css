@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;  
+}
+.navbar{
+    background-color: black;
+    color: white;
+}
+h1,li,ul{
+    display: inline-block;
+}
+ul{
+    padding-left: 60%;
+}
+h1{
+   padding: 20px; 
+   padding-top: 20px;
+}
+li{
+    padding: 10px;
+    color: grey;
+    cursor: pointer;
+}
+li:hover{
+    color: white;
+}
+.login{
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: solid black;
+    padding: 5px;
+}
+input{
+   width: 60%;
+   margin: 7%;
+   padding: 15px;
+   border-radius: 10px;  
+}
+.searchbar{
+    text-align: center;
+}
+.box{
+    display: inline-block;
+    width: 350px;
+    height: 350px; 
+}
+.bookbox{
+   text-align: center;
+}
+.contact{
+    background-color: black;
+    color: white;
+}
+.button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 3px;
+}
+
+
+

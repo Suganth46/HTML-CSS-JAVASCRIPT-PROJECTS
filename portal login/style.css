@@ -1,0 +1,85 @@
+.box1,.box2 {
+    
+    border: 1px solid rgb(238, 236, 236);
+    width: 600px;
+    
+ 
+    
+}
+input{
+    padding: 7px;
+    display: block;
+   
+    margin-top: 2%;
+    margin-left: 2%;
+}
+img{
+    display: inline-block;
+    width: 600px;
+    height: 100px;
+   
+    
+}
+html{
+    display: inline-block;
+}
+.Login{
+    color: white;
+    background-color: rgb(37, 156, 37);
+    padding: 7px;
+    border: none;
+    width: 30%;
+    
+    margin: 10px;
+    margin-left:2%;
+}
+#checkbox{
+    display: inline;
+}
+.reme{
+    display: inline-block;
+    font-size:medium;
+}
+a{
+    display: inline;
+    color: rgb(37, 156, 37);
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: large;
+    text-decoration: none;
+}
+.user{
+    display: inline-block;
+}
+.pass{
+    display:inline-block;
+}
+.container{
+    display:inline-block;
+   margin-top: 10%;
+    margin-left: 30%;
+
+}
+p{
+
+}
+.quest{
+    background-color: rgb(79, 79, 174);
+    color: white;
+    
+    border-radius: 50%;
+   
+    font-size: small;
+}
+pre{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 15px;
+}
+.box1{
+    background-color: rgb(246, 245, 245);
+}
+.box2{
+    padding-top: 10px;
+    padding-left: 0px;
+}

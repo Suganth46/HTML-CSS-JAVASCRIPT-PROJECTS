@@ -1,0 +1,128 @@
+html{
+    font-feature-settings: normal;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-variation-settings: normal;
+    tab-size: 4;
+}
+.navbar,footer{
+    padding: 16px;
+    background-color: #000000CC;
+    color:white;
+}
+a{
+    color: white;
+}
+.para{
+    color: black;
+}
+.center{
+    text-align: center;
+}
+h1{
+    margin: 0px 0px 32px;
+    font-size: 36px;
+}
+h3{
+    font-weight: normal;
+}
+p{
+    padding: 20px;
+    margin: 20px;
+}
+iframe{
+    height: fit-content;
+    width: fit-content;
+    margin-top: 77.46px;
+}
+.font-light{
+    color:#000000CC;
+    font: 30px ui-sans-serif,system-ui;
+    margin:37.5px 0px 64px;
+}
+.footer-info{
+    margin-right:100px;
+    margin-left: 400px;
+}
+body{
+    background-color:#b7d7e8;
+}
+.flex-wrapper{
+    display: flex;
+}
+.flex-wrapper div{
+    background-color: #000000CC;
+    flex:1 1 0;
+    color: white;
+    text-align: center;
+}
+.mentions{
+    font-size: 48px;
+    background-color: #000000CC;
+    color: white;
+    margin: 80px 0 auto;
+}
+.entries{
+    margin: 72px 0 42px;
+}
+.entry-button{
+    color: #D1D3D6;
+    padding: 16px 16px;
+    margin-bottom: 80px;
+    font-size: 14px;
+    background-color: #2B3440;
+    border-radius: 5px;
+    font-weight: 600;
+}
+body{
+    background-color: rgb(242, 127, 255);
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: minmax(100px,auto);
+    gap: 20px;
+}
+.one-video{
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+}
+.one-desc{
+    grid-row: 1;
+    grid-column: 2;
+    padding-right: 120px;
+    padding-left: 120px;
+}
+.two-video{
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+}
+.two-desc{
+    grid-column: 2;
+    grid-row: 2;
+    padding-right: 120px;
+    padding-left: 120px;
+}
+.three-video{
+    grid-column:1;
+    grid-row:3;
+    text-align: center;
+}
+.three-desc{
+    grid-column: 2;
+    grid-row: 3;
+    padding-right: 120px;
+    padding-left: 120px; 
+}
+.four-video{
+    grid-column: 1;
+    grid-row: 4;
+    text-align: center;
+}
+.four-desc{
+    grid-column: 2;
+    grid-row: 4;
+    padding-right: 120px;
+    padding-left: 120px; 
+}
